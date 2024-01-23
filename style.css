@@ -452,6 +452,9 @@ main{
 
 /* PROJECT */
 
+h3{
+  font-size: 24px;
+}
 main{
   margin-top: 500px;
   position: absolute;
@@ -485,11 +488,12 @@ main{
 .sectionProject{
   margin:10px;
   display: grid;
-  grid-template-columns: repeat(2,40%);
+  grid-template-columns: repeat(2,38%);
   text-align: center;
   align-items: center;
   justify-content: center;
 }
+
 .contactProject{
   text-align: right;
   position: relative;

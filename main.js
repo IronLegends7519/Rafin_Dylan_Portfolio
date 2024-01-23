@@ -1,35 +1,39 @@
-const test = document.querySelectorAll('.viewProject')
-const test2 = document.querySelectorAll('.imgDesign')
-const test3 = document.querySelectorAll('.viewCode')
+const viewProject = document.querySelectorAll('.viewProject')
+const imageDesign = document.querySelectorAll('.imgDesign')
+const viewCode = document.querySelectorAll('.viewCode')
 
 
 for(let i =0;i<6;i++){
-    frere(i)
+    afficherLiens(i)
 }
     
 
 
 
-function frere(index){
-    test2[index].addEventListener('mouseleave',()=>{
-        test2[index].style.opacity = '100%'
-        test[index].style.zIndex = '0'
-        test3[index].style.zIndex = '0'
+function afficherLiens(index){
+    
+    imageDesign[index].addEventListener('mouseleave',()=>{
+        imageDesign[index].style.opacity = '100%'
+        viewProject[index].style.zIndex = '0'
+        viewCode[index].style.zIndex = '0'
     })
-    test[index].addEventListener('mouseenter',()=>{
-        test2[index].style.opacity = '50%';
-        test[index].style.zIndex = '1'
-        test3[index].style.zIndex='1'
+
+    viewProject[index].addEventListener('mouseenter',()=>{
+        imageDesign[index].style.opacity = '50%';
+        viewProject[index].style.zIndex = '1'
+        viewCode[index].style.zIndex='1'
     })
-    test3[index].addEventListener('mouseenter',()=>{
-        test2[index].style.opacity = '50%';
-        test[index].style.zIndex = '1'
-        test3[index].style.zIndex='1'
+
+    viewCode[index].addEventListener('mouseenter',()=>{
+        imageDesign[index].style.opacity = '50%';
+        viewProject[index].style.zIndex = '1'
+        viewCode[index].style.zIndex='1'
     })
-    test2[index].addEventListener('mouseenter',()=>{
-        test2[index].style.opacity = '50%';
-        test[index].style.zIndex = '1'
-        test3[index].style.zIndex = '1'
+
+    imageDesign[index].addEventListener('mouseenter',()=>{
+        imageDesign[index].style.opacity = '50%';
+        viewProject[index].style.zIndex = '1'
+        viewCode[index].style.zIndex = '1'
     
     })
 }
