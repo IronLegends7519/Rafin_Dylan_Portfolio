@@ -12,18 +12,18 @@
     <header class="bgBlack center header">
       <div class="ring"></div>
       <div class="profil ">
-        <h2 class="textWhite adamkeyes">adamkeyes</h2>
+        <h3 class="textWhite adamkeyes">adamkeyes</h3>
         <img src="/assets/images/icon-github.svg" alt="icon-github" class="logo">
         <img src="/assets/images/icon-custom.svg" alt="icon-EdenSchool" class="logo">
         <img src="/assets/images/icon-linkedin.svg" alt="icon-linkedin" class="logo">
         <img src="/assets/images/icon-twitter.svg" alt="icon-twitter" class="logo">
       </div>
-      <div class="circle"></div>
+            <div class="circle"></div>
 
       <article class="article textWhite">
         <h1 class="nice">Nice to meet you! I’m <span class="adam">Adam Keyes.</span></h1>
         <p class="description">Based in the UK, I’m a front-end developer passionate about building accessible web apps that users love.</p>
-        <a href="mailto:test@gmail.com" class="contact textWhite underlineContact">CONTACT ME</a>
+        <a href="#contact" class="contact textWhite underlineContact">CONTACT ME</a>
       </article >
       <section class="textWhite section">
         <hr class="hr">
@@ -58,7 +58,7 @@
     <main class="bgBlack padding textWhite ">
       <div class="projectDiv">
         <h2 class="titreProject">Projects</h2>
-        <a href="mailto:test@gmail.com" class="contact textWhite underlineContact contactProject">CONTACT ME</a>
+        <a href="#contact" class="contact textWhite underlineContact contactProject">CONTACT ME</a>
       </div>
       <section class="project sectionProject">
 
@@ -124,9 +124,34 @@
       </section>
 
     </main>
-    <footer>
+    <footer class="footer textWhite" id="contact">
+    <div class="titleForm">
+      <div class="titleContact">
+        <h2 class="titreContact">Contact</h2>
+        <p class="textGrey">I would love to hear about your project and how I could help. Please fill in the form, and I’ll get back to you as soon as possible.</p>
+    </div>
+    <form action="send message" class="formulaire">
 
-    </footer>
+        <input type="text" name="name" id="name" required class="input" placeholder="NAME" >
+          <p id="errorName"></p>
+        <input type="text" name="email" id="email" required class="input" placeholder="EMAIL" >
+          <p id="errorMail"></p>
+        <input type="text" name="message" id="message" class="input message" placeholder="MESSAGE" >
+        <div class="ringContact"></div>
+        <button name="send" id="send" class="contact send underlineContact">SEND MESSAGE</button>
+    </form>
+  </div>  
+      <hr class="hrContact">
+      <div class="basDePage">
+        <h3 class="textWhite adamkeyesContact">adamkeyes</h3>
+        <div class="divLogo">
+        <img src="/assets/images/icon-github.svg" alt="icon-github" class="logoContact">
+        <img src="/assets/images/icon-custom.svg" alt="icon-EdenSchool" class="logoContact">
+        <img src="/assets/images/icon-linkedin.svg" alt="icon-linkedin" class="logoContact">
+        <img src="/assets/images/icon-twitter.svg" alt="icon-twitter" class="logoContact">
+        </div>
+      </div>
+      </footer>
     <script type="module" src="/main.js"></script>
   </body>
 </html>
